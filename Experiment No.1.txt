@@ -1,0 +1,26 @@
+//Vidyavardini's College of Engineering & Technology
+//Experiment No.1 
+//Program to find area of Circle, Triangle & Rectangle
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+    int r,b,h,l,w;
+    float ca,ta,ra;
+    printf("Area of Circle\n");
+    printf("Enter the value of radius = ");
+    scanf("%d",&r);
+    ca=3.14*r*r;
+    printf("Area of Circle ca is%f\n",ca);
+    printf("Area of Triangle\n");
+    printf("Enter value of base & height = ");
+    scanf("%d%d",&b,&h);
+    ta=0.5*b*h;
+    printf("Area of Triangle ta is=%f\n",ta);
+    printf("Area of Rectangle\n");
+    printf("Enter value of length and width");
+    scanf("%d%d",&l,&w);
+    ra=l*w;
+    printf("Area of rectangle ra is=%f\n",ra);
+    getch();
+}

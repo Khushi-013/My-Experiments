@@ -1,0 +1,45 @@
+//Program to calculate power, square root, addition, subtraction, division, multiplication using switch
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+void main()
+{
+    int a, b, c, choice;
+    printf("Enter the value of a & b");
+    scanf("%d%d",&a,&b);
+    printf("\n1.add \n2.sub \n3.mul \n4.div \n5.pow \n6.sqrt");
+    printf("\n Enter the choice");
+    scanf("%d",&choice);
+    switch(choice)
+    {
+        case 1: 
+        c=a+b;
+        printf("\naddition=%d",c);
+        break;
+        case 2:
+        c=a-b;
+        printf("\nsubtraction=%d",c);
+        break;
+        case 3:
+        c=a*b;
+        printf("\nmultiplication=%d",c);
+        break;
+        case 4:
+        c=a/b;
+        printf("\ndivision=%d",c);
+        break;
+        case 5:
+        c=pow(a,b);
+        printf("\npower=%d",c);
+        break;
+        case 6:
+        c=sqrt(b);
+        printf("\nsquareroot=%d",c);
+        break;
+        default:
+        printf("\nwrong choice");
+        break;
+    }
+    getch();
+}
+    
